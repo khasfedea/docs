@@ -1,0 +1,256 @@
+\hypertarget{functions_8php}{}\doxysection{functions.\+php File Reference}
+\label{functions_8php}\index{functions.php@{functions.php}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classUser}{User}}
+\item 
+class \mbox{\hyperlink{classMessage}{Message}}
+\item 
+class \mbox{\hyperlink{classLikedComment}{Liked\+Comment}}
+\item 
+class \mbox{\hyperlink{classComment}{Comment}}
+\item 
+class \mbox{\hyperlink{classAnnouncement}{Announcement}}
+\item 
+class \mbox{\hyperlink{classPost}{Post}}
+\item 
+class \mbox{\hyperlink{classImageManipulator}{Image\+Manipulator}}
+\item 
+class \mbox{\hyperlink{classSearchResult}{Search\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{functions_8php_a8bf908ae9cc8019724798d44f9a6b541}{Check\+Post\+Set}} (\$name)
+\item 
+\mbox{\hyperlink{functions_8php_a5515054f3136ba238320cc6f2e155984}{Get\+If\+Set}} (\$name)
+\item 
+\mbox{\hyperlink{functions_8php_ac8b9d8d9a323b942b5873a4ce78479a8}{Get\+Post\+Field}} (\$name, \$is\+Required=false, \$row\+Name=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{functions_8php_a4bf54dd5af02a3c60faba84e28c8aa81}{translate\+Register\+Variable}} (\$name)
+\item 
+\mbox{\hyperlink{functions_8php_afe84bb8092a2f580a9a48dcb56951dfa}{handle\+Query\+Error}} (\$link)
+\item 
+\mbox{\hyperlink{functions_8php_a6cd28b6420b73ed3bf3947264a5d8c8a}{Post\+The\+Posts}} (\$issuer\+\_\+id)
+\item 
+\mbox{\hyperlink{functions_8php_aa5b2c88d8e502d3560d62526e034c17f}{Print\+Announcements}} ()
+\item 
+\mbox{\hyperlink{functions_8php_a282e8dd66bcae41a1850d468f0a2acf4}{Compress\+Image}} (\$input, \$output, \$quality=90)
+\item 
+\mbox{\hyperlink{functions_8php_a853ac2f0cf8d27c6b96f58a7c9b9cfd9}{Cut\+Image}} (\$input, \$output)
+\item 
+\mbox{\hyperlink{functions_8php_a39587eba84b37b6c258ff48d29019f19}{Search\+User}} (\$keyword)
+\item 
+\mbox{\hyperlink{functions_8php_ab24531fa077e0c68d348340c7b6bbb10}{Post\+Users}} (\$user\+\_\+array)
+\item 
+\mbox{\hyperlink{functions_8php_a23acd26e8edd2021350d79db45234c26}{Get\+Friend\+Requests}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{functions_8php_a5d346e31b75d916e3bac9cb193bfc97f}{\$link}} = \$GLOBALS\mbox{[}\textquotesingle{}link\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file is a part of Fedea Project (\href{https://github.com/khasfedea/FedeaProject}{\texttt{ https\+://github.\+com/khasfedea/\+Fedea\+Project}}). \begin{DoxyCopyright}{Copyright}
+Copyright (C) 2021 Furkan Mudanyali, Team FEDEA.
+\end{DoxyCopyright}
+
+\begin{DoxyDescription}
+\item[License]This program is free software\+: you can redistribute it and/or modify ~\newline
+ it under the terms of the GNU General Public License as published by ~\newline
+ the Free Software Foundation, version 3.
+
+This program is distributed in the hope that it will be useful, but ~\newline
+WITHOUT ANY WARRANTY; without even the implied warranty of ~\newline
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU ~\newline
+General Public License for more details. ~\newline
+ You should have received a copy of the GNU General Public License ~\newline
+along with this program. If not, see \href{http://www.gnu.org/licenses/}{\texttt{ http\+://www.\+gnu.\+org/licenses/}}. 
+\end{DoxyDescription}
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{functions_8php_a8bf908ae9cc8019724798d44f9a6b541}\label{functions_8php_a8bf908ae9cc8019724798d44f9a6b541}} 
+\index{functions.php@{functions.php}!CheckPostSet@{CheckPostSet}}
+\index{CheckPostSet@{CheckPostSet}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{CheckPostSet()}{CheckPostSet()}}
+{\footnotesize\ttfamily Check\+Post\+Set (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Just a fancy alias to fit in the naming convention 
+\begin{DoxyParams}{Parameters}
+{\em string} & POST field to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool The POST is set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_a282e8dd66bcae41a1850d468f0a2acf4}\label{functions_8php_a282e8dd66bcae41a1850d468f0a2acf4}} 
+\index{functions.php@{functions.php}!CompressImage@{CompressImage}}
+\index{CompressImage@{CompressImage}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{CompressImage()}{CompressImage()}}
+{\footnotesize\ttfamily Compress\+Image (\begin{DoxyParamCaption}\item[{}]{\$input,  }\item[{}]{\$output,  }\item[{}]{\$quality = {\ttfamily 90} }\end{DoxyParamCaption})}
+
+Compress the given image, return error if input is not an image. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Input path \\
+\hline
+{\em string} & Output path \\
+\hline
+{\em int} & Quality of the compression \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8php_a853ac2f0cf8d27c6b96f58a7c9b9cfd9}\label{functions_8php_a853ac2f0cf8d27c6b96f58a7c9b9cfd9}} 
+\index{functions.php@{functions.php}!CutImage@{CutImage}}
+\index{CutImage@{CutImage}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{CutImage()}{CutImage()}}
+{\footnotesize\ttfamily Cut\+Image (\begin{DoxyParamCaption}\item[{}]{\$input,  }\item[{}]{\$output }\end{DoxyParamCaption})}
+
+Cut the given image to a square. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Input path \\
+\hline
+{\em string} & Output path \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8php_a23acd26e8edd2021350d79db45234c26}\label{functions_8php_a23acd26e8edd2021350d79db45234c26}} 
+\index{functions.php@{functions.php}!GetFriendRequests@{GetFriendRequests}}
+\index{GetFriendRequests@{GetFriendRequests}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{GetFriendRequests()}{GetFriendRequests()}}
+{\footnotesize\ttfamily Get\+Friend\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Echo the pending friend requests of the session user. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_a5515054f3136ba238320cc6f2e155984}\label{functions_8php_a5515054f3136ba238320cc6f2e155984}} 
+\index{functions.php@{functions.php}!GetIfSet@{GetIfSet}}
+\index{GetIfSet@{GetIfSet}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{GetIfSet()}{GetIfSet()}}
+{\footnotesize\ttfamily Get\+If\+Set (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Return POST value if POST field is set 
+\begin{DoxyParams}{Parameters}
+{\em string} & POST field to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string POST value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_ac8b9d8d9a323b942b5873a4ce78479a8}\label{functions_8php_ac8b9d8d9a323b942b5873a4ce78479a8}} 
+\index{functions.php@{functions.php}!GetPostField@{GetPostField}}
+\index{GetPostField@{GetPostField}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{GetPostField()}{GetPostField()}}
+{\footnotesize\ttfamily Get\+Post\+Field (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$is\+Required = {\ttfamily false},  }\item[{}]{\$row\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Get the value of the specified POST field. 
+\begin{DoxyParams}{Parameters}
+{\em string} & POST field \\
+\hline
+{\em bool} & Is the field required to be filled \\
+\hline
+{\em string} & custom row name for sql \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string POST value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_afe84bb8092a2f580a9a48dcb56951dfa}\label{functions_8php_afe84bb8092a2f580a9a48dcb56951dfa}} 
+\index{functions.php@{functions.php}!handleQueryError@{handleQueryError}}
+\index{handleQueryError@{handleQueryError}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{handleQueryError()}{handleQueryError()}}
+{\footnotesize\ttfamily handle\+Query\+Error (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+Made primarily for duplicate rows, may be modified for general use. 
+\begin{DoxyParams}{Parameters}
+{\em link} & SQL link \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Error message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_a6cd28b6420b73ed3bf3947264a5d8c8a}\label{functions_8php_a6cd28b6420b73ed3bf3947264a5d8c8a}} 
+\index{functions.php@{functions.php}!PostThePosts@{PostThePosts}}
+\index{PostThePosts@{PostThePosts}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{PostThePosts()}{PostThePosts()}}
+{\footnotesize\ttfamily Post\+The\+Posts (\begin{DoxyParamCaption}\item[{}]{\$issuer\+\_\+id }\end{DoxyParamCaption})}
+
+Echo every \char`\"{}\+Post\char`\"{} of the issuers friends. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Issuer ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_ab24531fa077e0c68d348340c7b6bbb10}\label{functions_8php_ab24531fa077e0c68d348340c7b6bbb10}} 
+\index{functions.php@{functions.php}!PostUsers@{PostUsers}}
+\index{PostUsers@{PostUsers}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{PostUsers()}{PostUsers()}}
+{\footnotesize\ttfamily Post\+Users (\begin{DoxyParamCaption}\item[{}]{\$user\+\_\+array }\end{DoxyParamCaption})}
+
+Echo the given user object array 
+\begin{DoxyParams}{Parameters}
+{\em users} & Array of user objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_aa5b2c88d8e502d3560d62526e034c17f}\label{functions_8php_aa5b2c88d8e502d3560d62526e034c17f}} 
+\index{functions.php@{functions.php}!PrintAnnouncements@{PrintAnnouncements}}
+\index{PrintAnnouncements@{PrintAnnouncements}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{PrintAnnouncements()}{PrintAnnouncements()}}
+{\footnotesize\ttfamily Print\+Announcements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Echo every announcement. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_a39587eba84b37b6c258ff48d29019f19}\label{functions_8php_a39587eba84b37b6c258ff48d29019f19}} 
+\index{functions.php@{functions.php}!SearchUser@{SearchUser}}
+\index{SearchUser@{SearchUser}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{SearchUser()}{SearchUser()}}
+{\footnotesize\ttfamily Search\+User (\begin{DoxyParamCaption}\item[{}]{\$keyword }\end{DoxyParamCaption})}
+
+Search for the given keyword, and echo the result. 
+\begin{DoxyParams}{Parameters}
+{\em string} & keyword to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+users Array of user objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8php_a4bf54dd5af02a3c60faba84e28c8aa81}\label{functions_8php_a4bf54dd5af02a3c60faba84e28c8aa81}} 
+\index{functions.php@{functions.php}!translateRegisterVariable@{translateRegisterVariable}}
+\index{translateRegisterVariable@{translateRegisterVariable}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{translateRegisterVariable()}{translateRegisterVariable()}}
+{\footnotesize\ttfamily translate\+Register\+Variable (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+To ease error handling in Get\+Post\+Field 
+\begin{DoxyParams}{Parameters}
+{\em string} & Error string to translate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Correct error string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{functions_8php_a5d346e31b75d916e3bac9cb193bfc97f}\label{functions_8php_a5d346e31b75d916e3bac9cb193bfc97f}} 
+\index{functions.php@{functions.php}!\$link@{\$link}}
+\index{\$link@{\$link}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{\$link}{$link}}
+{\footnotesize\ttfamily \$link = \$GLOBALS\mbox{[}\textquotesingle{}link\textquotesingle{}\mbox{]}}
+
+Make the sql link global across functions 

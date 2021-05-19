@@ -1,0 +1,30 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+This is a social platform for a university, demo page can be reached here\+: \href{https://fedea.games}{\texttt{ fedea.\+games}}
+
+\href{https://fedea.games/docs}{\texttt{ Link to this document page}}
+
+\href{https://github.com/KhasFedea/docs}{\texttt{ Backup link}}
+
+The main goal of this project is to aid students in socializing during this pandemic.\hypertarget{index_autotoc_md5}{}\doxysubsection{How to Deploy}\label{index_autotoc_md5}
+This website should work in every environment where the dependencies are available.
+
+The dependencies are\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{nginx or apache2}
+\DoxyCodeLine{php7.2-\/fpm}
+\DoxyCodeLine{mysql or mariadb}
+\DoxyCodeLine{python3-\/cert-\/bot (optional)}
+
+\end{DoxyCode}
+
+
+The things you need to do\+:
+\begin{DoxyItemize}
+\item Install the database server and create a database.
+\item Install HTTP server and PHP FPM.
+\item Configure your HTTP server to use PHP FPM back proxy.
+\item (Recommended) Enable HTTPS support with python3-\/cert-\/bot.
+\item Put fedea folders in the website folder, (ex\+: \char`\"{}/var/www/html\char`\"{})
+\item Put database credentials inside \char`\"{}config.\+php\char`\"{} 
+\end{DoxyItemize}

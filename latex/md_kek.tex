@@ -1,0 +1,60 @@
+\hypertarget{md_kek_autotoc_md1}{}\doxysection{/etc/nginx/sites-\/available/\$\+WEBSITE\+\_\+\+NAME}\label{md_kek_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{server \{}
+\DoxyCodeLine{        root /var/www/\$WEBSITE\_NAME/html;}
+\DoxyCodeLine{        index index.php index.html index.htm index.nginx-\/debian.html;}
+\DoxyCodeLine{        server\_name \$WEBSITE\_NAME www.\$WEBSITE\_NAME;}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        client\_max\_body\_size 4M;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        proxy\_cookie\_path / "{}/; HTTPOnly; Secure"{};}
+\DoxyCodeLine{        add\_header Set-\/Cookie "{}Path=/; Secure/ HttpOnly"{};}
+\DoxyCodeLine{        add\_header Strict-\/Transport-\/Security "{}max-\/age=31536000; includeSubDomains"{} always;}
+\DoxyCodeLine{        add\_header Content-\/Security-\/Policy "{}default-\/src https:; script-\/src https://code.jquery.com/jquery-\/3.6.0.min.js 'self' 'unsafe-\/inline'; img-\/src 'self'; style-\/src 'self'; frame-\/ancestors 'none'"{} always;}
+\DoxyCodeLine{        add\_header X-\/Content-\/Type-\/Options nosniff;}
+\DoxyCodeLine{        add\_header X-\/Frame-\/Options DENY;}
+\DoxyCodeLine{        add\_header X-\/XSS-\/Protection "{}1; mode=block"{};}
+\DoxyCodeLine{}
+\DoxyCodeLine{        location \string~ \(\backslash\).php\$ \{}
+\DoxyCodeLine{                include snippets/fastcgi-\/php.conf;}
+\DoxyCodeLine{                fastcgi\_pass unix:/run/php/php7.2-\/fpm.sock;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        location \string~ /\(\backslash\).ht \{}
+\DoxyCodeLine{                deny all;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        location \string~ /\(\backslash\).git \{}
+\DoxyCodeLine{                deny all;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        location \string~ \string^/.well-\/known/acme-\/challenge/* \{}
+\DoxyCodeLine{                allow all;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        location / \{}
+\DoxyCodeLine{                try\_files \$uri \$uri/ =404;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    ssl\_protocols TLSv1.2 TLSv1.3;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{server \{}
+\DoxyCodeLine{        listen 80;}
+\DoxyCodeLine{        listen [::]:80;}
+\DoxyCodeLine{        server\_name \$WEBSITE\_NAME www.\$WEBSITE\_NAME;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_kek_autotoc_md2}{}\doxysection{Change/add these lines for /etc/php/7.\+2/fpm/php.\+ini}\label{md_kek_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{session.cookie\_httponly = 1}
+\DoxyCodeLine{session.cookie\_secure bool = 1}
+\DoxyCodeLine{extension=gd2}
+\DoxyCodeLine{extension=mysqli}
+
+\end{DoxyCode}
+\hypertarget{md_kek_autotoc_md3}{}\doxysection{Change these lines for /etc/letsencrypt/options-\/ssl-\/nginx.\+conf}\label{md_kek_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ssl\_protocols TLSv1.2 TLSv1.3;}
+\DoxyCodeLine{ssl\_prefer\_server\_ciphers on;}
+
+\end{DoxyCode}
+ 

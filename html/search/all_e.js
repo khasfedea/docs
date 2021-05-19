@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['translateregistervariable_44',['translateRegisterVariable',['../functions_8php.html#a4bf54dd5af02a3c60faba84e28c8aa81',1,'functions.php']]]
+];

@@ -1,0 +1,126 @@
+\hypertarget{classUser}{}\doxysection{User Class Reference}
+\label{classUser}\index{User@{User}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUser_a15df89752c9ed9d15e9ee9d17d1e217f}{\+\_\+\+\_\+construct}} (\$student\+\_\+id, \$issuer\+\_\+id)
+\item 
+\mbox{\hyperlink{classUser_a8cd41ee4c22229a7df7087605ef757c1}{Get\+Friendship\+Status}} ()
+\item 
+\mbox{\hyperlink{classUser_a325f59b82e8187e4f62500a7cab5fa2e}{Print\+User\+Posts}} ()
+\item 
+\mbox{\hyperlink{classUser_aaf78930e8e52d56c604567923557a6a9}{Print\+Portfolio}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUser_af1b487d5e8389b790b22b345ace514aa}\label{classUser_af1b487d5e8389b790b22b345ace514aa}} 
+{\bfseries \$student\+\_\+id}
+\item 
+\mbox{\Hypertarget{classUser_ab4216ecb16d420f69cb32659a6744846}\label{classUser_ab4216ecb16d420f69cb32659a6744846}} 
+{\bfseries \$first\+Name}
+\item 
+\mbox{\Hypertarget{classUser_a4f49336b16dc2612dae2069a078f4f14}\label{classUser_a4f49336b16dc2612dae2069a078f4f14}} 
+{\bfseries \$last\+Name}
+\item 
+\mbox{\Hypertarget{classUser_a60a467d3dccd3eadebabc0e240741a5e}\label{classUser_a60a467d3dccd3eadebabc0e240741a5e}} 
+{\bfseries \$date\+Of\+Birth}
+\item 
+\mbox{\Hypertarget{classUser_a3bef7b70689d1e56cafbf750ff6a4aed}\label{classUser_a3bef7b70689d1e56cafbf750ff6a4aed}} 
+{\bfseries \$email}
+\item 
+\mbox{\Hypertarget{classUser_a45437859a23b043e41140cd7e025aaf6}\label{classUser_a45437859a23b043e41140cd7e025aaf6}} 
+{\bfseries \$avatar\+Src}
+\item 
+\mbox{\Hypertarget{classUser_a5e54e0d0916fc0426baafecf8f577043}\label{classUser_a5e54e0d0916fc0426baafecf8f577043}} 
+{\bfseries \$friends}
+\item 
+\mbox{\Hypertarget{classUser_a45735496d2f63d562ac59ac0393f261c}\label{classUser_a45735496d2f63d562ac59ac0393f261c}} 
+{\bfseries \$privacy}
+\item 
+\mbox{\Hypertarget{classUser_aba01d838fd7b86bd65d1d99a21129702}\label{classUser_aba01d838fd7b86bd65d1d99a21129702}} 
+{\bfseries \$authorized}
+\item 
+\mbox{\Hypertarget{classUser_a34a888eb7335aece5ee7918fad170a46}\label{classUser_a34a888eb7335aece5ee7918fad170a46}} 
+{\bfseries \$branch}
+\item 
+\mbox{\Hypertarget{classUser_a6f63806bfe40d3c79a0520b6e4dd73da}\label{classUser_a6f63806bfe40d3c79a0520b6e4dd73da}} 
+{\bfseries \$bio}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUser_a15df89752c9ed9d15e9ee9d17d1e217f}\label{classUser_a15df89752c9ed9d15e9ee9d17d1e217f}} 
+\index{User@{User}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily User\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$student\+\_\+id,  }\item[{}]{\$issuer\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classUser}{User}} constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The student\+\_\+id of the user to be created \\
+\hline
+{\em string} & The student\+\_\+id of who issues the user, for privacy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUser_a8cd41ee4c22229a7df7087605ef757c1}\label{classUser_a8cd41ee4c22229a7df7087605ef757c1}} 
+\index{User@{User}!GetFriendshipStatus@{GetFriendshipStatus}}
+\index{GetFriendshipStatus@{GetFriendshipStatus}!User@{User}}
+\doxysubsubsection{\texorpdfstring{GetFriendshipStatus()}{GetFriendshipStatus()}}
+{\footnotesize\ttfamily User\+::\+Get\+Friendship\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Echo the friendship buttons according to the issuer\+\_\+id
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUser_aaf78930e8e52d56c604567923557a6a9}\label{classUser_aaf78930e8e52d56c604567923557a6a9}} 
+\index{User@{User}!PrintPortfolio@{PrintPortfolio}}
+\index{PrintPortfolio@{PrintPortfolio}!User@{User}}
+\doxysubsubsection{\texorpdfstring{PrintPortfolio()}{PrintPortfolio()}}
+{\footnotesize\ttfamily User\+::\+Print\+Portfolio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Echo user portfolio according to the issuer\+\_\+id
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUser_a325f59b82e8187e4f62500a7cab5fa2e}\label{classUser_a325f59b82e8187e4f62500a7cab5fa2e}} 
+\index{User@{User}!PrintUserPosts@{PrintUserPosts}}
+\index{PrintUserPosts@{PrintUserPosts}!User@{User}}
+\doxysubsubsection{\texorpdfstring{PrintUserPosts()}{PrintUserPosts()}}
+{\footnotesize\ttfamily User\+::\+Print\+User\+Posts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Echo user specific posts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{functions_8php}{functions.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,270 @@
+\hypertarget{classImageManipulator}{}\doxysection{Image\+Manipulator Class Reference}
+\label{classImageManipulator}\index{ImageManipulator@{ImageManipulator}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classImageManipulator_a8f7bf39399275e2fbe3927deee2629ab}{\+\_\+\+\_\+construct}} (\$file=null)
+\item 
+\mbox{\hyperlink{classImageManipulator_a932231bf4868f2ced7f29b8704800cd3}{set\+Image\+File}} (\$file)
+\item 
+\mbox{\hyperlink{classImageManipulator_ae753bdaacaf4d780fa63604d3fe78df5}{set\+Image\+String}} (\$data)
+\item 
+\mbox{\hyperlink{classImageManipulator_a2d2daf26ab39a40ce0e95b9c3ce4c8bd}{resample}} (\$width, \$height, \$constrain\+Proportions=true)
+\item 
+\mbox{\hyperlink{classImageManipulator_a43113f933bafcf9653cfac4ebc94eedc}{enlarge\+Canvas}} (\$width, \$height, array \$rgb=array(), \$xpos=null, \$ypos=null)
+\item 
+\mbox{\hyperlink{classImageManipulator_a4e2ab5f3995bff0eef7604fc4b4ace67}{crop}} (\$x1, \$y1=0, \$x2=0, \$y2=0)
+\item 
+\mbox{\hyperlink{classImageManipulator_a4e59a1d1592a93965087bcff957acf0e}{save}} (\$file\+Name, \$type=IMAGETYPE\+\_\+\+JPEG)
+\item 
+\mbox{\hyperlink{classImageManipulator_a79ab59f9e5b6bd4bed7ec3ae4851466c}{get\+Resource}} ()
+\item 
+\mbox{\hyperlink{classImageManipulator_a01ffaeff6227b585d76522004f0a0f56}{get\+Width}} ()
+\item 
+\mbox{\hyperlink{classImageManipulator_ac51ac79555dad79a2e2640ee5a6d51d5}{get\+Height}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classImageManipulator_a824f863c72e22cd7afd3d0fb088fb29b}{\+\_\+replace}} (\$res)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImageManipulator_a8124cd16b7397288b509fc4c490ba52e}\label{classImageManipulator_a8124cd16b7397288b509fc4c490ba52e}} 
+{\bfseries \$width}
+\item 
+\mbox{\Hypertarget{classImageManipulator_a3980d8f8cbf5acc6b2c9e872e0fae837}\label{classImageManipulator_a3980d8f8cbf5acc6b2c9e872e0fae837}} 
+{\bfseries \$height}
+\item 
+\mbox{\Hypertarget{classImageManipulator_a1e23119d5d5e9fd7f3cf2ae66f5bcf1d}\label{classImageManipulator_a1e23119d5d5e9fd7f3cf2ae66f5bcf1d}} 
+{\bfseries \$image}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classImageManipulator}{Image\+Manipulator}} Class by phil\+Brown, \href{https://gist.github.com/philBrown/880506}{\texttt{ https\+://gist.\+github.\+com/phil\+Brown/880506}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classImageManipulator_a8f7bf39399275e2fbe3927deee2629ab}\label{classImageManipulator_a8f7bf39399275e2fbe3927deee2629ab}} 
+\index{ImageManipulator@{ImageManipulator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$file = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Image manipulator constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & OPTIONAL Path to image file or image data as string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classImageManipulator_a824f863c72e22cd7afd3d0fb088fb29b}\label{classImageManipulator_a824f863c72e22cd7afd3d0fb088fb29b}} 
+\index{ImageManipulator@{ImageManipulator}!\_replace@{\_replace}}
+\index{\_replace@{\_replace}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{\_replace()}{\_replace()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::\+\_\+replace (\begin{DoxyParamCaption}\item[{}]{\$res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace current image resource with a new one
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$res} & New image resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classImageManipulator}{Image\+Manipulator}} for a fluent interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Value\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classImageManipulator_a4e2ab5f3995bff0eef7604fc4b4ace67}\label{classImageManipulator_a4e2ab5f3995bff0eef7604fc4b4ace67}} 
+\index{ImageManipulator@{ImageManipulator}!crop@{crop}}
+\index{crop@{crop}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{crop()}{crop()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::crop (\begin{DoxyParamCaption}\item[{}]{\$x1,  }\item[{}]{\$y1 = {\ttfamily 0},  }\item[{}]{\$x2 = {\ttfamily 0},  }\item[{}]{\$y2 = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Crop image
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | array & {\em \$x1} & Top left x-\/coordinate of crop box or array of coordinates \\
+\hline
+int & {\em \$y1} & Top left y-\/coordinate of crop box \\
+\hline
+int & {\em \$x2} & Bottom right x-\/coordinate of crop box \\
+\hline
+int & {\em \$y2} & Bottom right y-\/coordinate of crop box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classImageManipulator}{Image\+Manipulator}} for a fluent interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classImageManipulator_a43113f933bafcf9653cfac4ebc94eedc}\label{classImageManipulator_a43113f933bafcf9653cfac4ebc94eedc}} 
+\index{ImageManipulator@{ImageManipulator}!enlargeCanvas@{enlargeCanvas}}
+\index{enlargeCanvas@{enlargeCanvas}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{enlargeCanvas()}{enlargeCanvas()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::enlarge\+Canvas (\begin{DoxyParamCaption}\item[{}]{\$width,  }\item[{}]{\$height,  }\item[{array}]{\$rgb = {\ttfamily array()},  }\item[{}]{\$xpos = {\ttfamily null},  }\item[{}]{\$ypos = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Enlarge canvas
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$width} & Canvas width \\
+\hline
+int & {\em \$height} & Canvas height \\
+\hline
+array & {\em \$rgb} & RGB colour values \\
+\hline
+int & {\em \$xpos} & X-\/\+Position of image in new canvas, null for centre \\
+\hline
+int & {\em \$ypos} & Y-\/\+Position of image in new canvas, null for centre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classImageManipulator}{Image\+Manipulator}} for a fluent interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classImageManipulator_ac51ac79555dad79a2e2640ee5a6d51d5}\label{classImageManipulator_ac51ac79555dad79a2e2640ee5a6d51d5}} 
+\index{ImageManipulator@{ImageManipulator}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get current image height
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImageManipulator_a79ab59f9e5b6bd4bed7ec3ae4851466c}\label{classImageManipulator_a79ab59f9e5b6bd4bed7ec3ae4851466c}} 
+\index{ImageManipulator@{ImageManipulator}!getResource@{getResource}}
+\index{getResource@{getResource}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{getResource()}{getResource()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::get\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the GD image resource
+
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImageManipulator_a01ffaeff6227b585d76522004f0a0f56}\label{classImageManipulator_a01ffaeff6227b585d76522004f0a0f56}} 
+\index{ImageManipulator@{ImageManipulator}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get current image resource width
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImageManipulator_a2d2daf26ab39a40ce0e95b9c3ce4c8bd}\label{classImageManipulator_a2d2daf26ab39a40ce0e95b9c3ce4c8bd}} 
+\index{ImageManipulator@{ImageManipulator}!resample@{resample}}
+\index{resample@{resample}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{resample()}{resample()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::resample (\begin{DoxyParamCaption}\item[{}]{\$width,  }\item[{}]{\$height,  }\item[{}]{\$constrain\+Proportions = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Resamples the current image
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$width} & New width \\
+\hline
+int & {\em \$height} & New height \\
+\hline
+bool & {\em \$constrain\+Proportions} & Constrain current image proportions when resizing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classImageManipulator}{Image\+Manipulator}} for a fluent interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classImageManipulator_a4e59a1d1592a93965087bcff957acf0e}\label{classImageManipulator_a4e59a1d1592a93965087bcff957acf0e}} 
+\index{ImageManipulator@{ImageManipulator}!save@{save}}
+\index{save@{save}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::save (\begin{DoxyParamCaption}\item[{}]{\$file\+Name,  }\item[{}]{\$type = {\ttfamily IMAGETYPE\+\_\+JPEG} }\end{DoxyParamCaption})}
+
+Save current image to file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classImageManipulator_a932231bf4868f2ced7f29b8704800cd3}\label{classImageManipulator_a932231bf4868f2ced7f29b8704800cd3}} 
+\index{ImageManipulator@{ImageManipulator}!setImageFile@{setImageFile}}
+\index{setImageFile@{setImageFile}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{setImageFile()}{setImageFile()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::set\+Image\+File (\begin{DoxyParamCaption}\item[{}]{\$file }\end{DoxyParamCaption})}
+
+Set image resource from file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & Path to image file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classImageManipulator}{Image\+Manipulator}} for a fluent interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classImageManipulator_ae753bdaacaf4d780fa63604d3fe78df5}\label{classImageManipulator_ae753bdaacaf4d780fa63604d3fe78df5}} 
+\index{ImageManipulator@{ImageManipulator}!setImageString@{setImageString}}
+\index{setImageString@{setImageString}!ImageManipulator@{ImageManipulator}}
+\doxysubsubsection{\texorpdfstring{setImageString()}{setImageString()}}
+{\footnotesize\ttfamily Image\+Manipulator\+::set\+Image\+String (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+Set image resource from string data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classImageManipulator}{Image\+Manipulator}} for a fluent interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{functions_8php}{functions.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{classComment}{}\doxysection{Comment Class Reference}
+\label{classComment}\index{Comment@{Comment}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComment_a48d72d66d88f1f1fd360a1d6eacf981b}{\+\_\+\+\_\+construct}} (\$id)
+\item 
+\mbox{\hyperlink{classComment_aa6b0d50fa498bd6bbe08511ab62a04ca}{get\+Like\+Count}} ()
+\item 
+\mbox{\hyperlink{classComment_a3960642d91be4a08d715ae0452705b1c}{like\+Comment}} ()
+\item 
+\mbox{\hyperlink{classComment_af48bd513dff20b12089fa99cf6ce6ea4}{Get\+Like\+Status}} ()
+\item 
+\mbox{\hyperlink{classComment_a851a19c38bbced003dbf2301c2332596}{print\+Comment}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComment_a23f66bb4dafb6bb88b53a68fe3370c72}\label{classComment_a23f66bb4dafb6bb88b53a68fe3370c72}} 
+{\bfseries \$id}
+\item 
+\mbox{\Hypertarget{classComment_a0c64529c7c2954b6c98b123193c779ad}\label{classComment_a0c64529c7c2954b6c98b123193c779ad}} 
+{\bfseries \$post\+\_\+id}
+\item 
+\mbox{\Hypertarget{classComment_a230d534697b8e7beb557e53d780fcfeb}\label{classComment_a230d534697b8e7beb557e53d780fcfeb}} 
+{\bfseries \$commenter}
+\item 
+\mbox{\Hypertarget{classComment_a78d575f19602fce45ba9e01d7075cf3a}\label{classComment_a78d575f19602fce45ba9e01d7075cf3a}} 
+{\bfseries \$comment}
+\item 
+\mbox{\Hypertarget{classComment_a3b1c85a426581cb2357f4993f85e1d74}\label{classComment_a3b1c85a426581cb2357f4993f85e1d74}} 
+{\bfseries \$timestamp}
+\item 
+\mbox{\Hypertarget{classComment_a8e8aa26212a89e82265dd8849af86bec}\label{classComment_a8e8aa26212a89e82265dd8849af86bec}} 
+{\bfseries \$admins}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComment_a48d72d66d88f1f1fd360a1d6eacf981b}\label{classComment_a48d72d66d88f1f1fd360a1d6eacf981b}} 
+\index{Comment@{Comment}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily Comment\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classComment}{Comment}} class constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & \mbox{\hyperlink{classMessage}{Message}} id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComment_aa6b0d50fa498bd6bbe08511ab62a04ca}\label{classComment_aa6b0d50fa498bd6bbe08511ab62a04ca}} 
+\index{Comment@{Comment}!getLikeCount@{getLikeCount}}
+\index{getLikeCount@{getLikeCount}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getLikeCount()}{getLikeCount()}}
+{\footnotesize\ttfamily Comment\+::get\+Like\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the like count of the message. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of likes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComment_af48bd513dff20b12089fa99cf6ce6ea4}\label{classComment_af48bd513dff20b12089fa99cf6ce6ea4}} 
+\index{Comment@{Comment}!GetLikeStatus@{GetLikeStatus}}
+\index{GetLikeStatus@{GetLikeStatus}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{GetLikeStatus()}{GetLikeStatus()}}
+{\footnotesize\ttfamily Comment\+::\+Get\+Like\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the session id user liked the comment or not. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Like string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComment_a3960642d91be4a08d715ae0452705b1c}\label{classComment_a3960642d91be4a08d715ae0452705b1c}} 
+\index{Comment@{Comment}!likeComment@{likeComment}}
+\index{likeComment@{likeComment}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{likeComment()}{likeComment()}}
+{\footnotesize\ttfamily Comment\+::like\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Like/\+Unlike the comment according to the session id. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComment_a851a19c38bbced003dbf2301c2332596}\label{classComment_a851a19c38bbced003dbf2301c2332596}} 
+\index{Comment@{Comment}!printComment@{printComment}}
+\index{printComment@{printComment}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{printComment()}{printComment()}}
+{\footnotesize\ttfamily Comment\+::print\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Echo the comment in the specific format. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{functions_8php}{functions.\+php}}\end{DoxyCompactItemize}
